@@ -1,4 +1,4 @@
 <?php
     return [
-        App\Core\Route::get('|^.test/students/([0-9]+)/?$|',  'MainApi', 'getStudentReport')
+        App\Core\Route::get('|^students/([0-9]+)/?$|',  'MainApi', 'getStudentReport')
     ];
