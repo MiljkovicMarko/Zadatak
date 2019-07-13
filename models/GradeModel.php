@@ -16,9 +16,6 @@
                 'grade'          => new Field((new StringValidator())->setMaxLength(50) )
             ];
         }
-        // public function getAllByStudentId(int $id): array {
-        //     return $this->getAllByFieldName('student_id', $id);
-        // }
         public function getGradesByStudentId(int $id): array {
             $sql = 'SELECT '. 'grade'.' FROM ' . 'grade' . ' WHERE ' . 'student_id' . ' = ?;';
             $values = [$id];
